@@ -6,10 +6,11 @@
                     <tr>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >#SL</th>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Name</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz One</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Two</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Three</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Four</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz A</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz B</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz C</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz D</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Answer</th>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Action</th>
                     </tr>
                 </thead>
@@ -18,10 +19,11 @@
                     <tr>
                         <th class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{$key + 1}}</th>
                         <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->quiz_name, 10)}}</td>
-                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->quiz_ans_one ,8)}}</td>
-                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->quiz_ans_two ,8)}}</td>
-                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->quiz_ans_three ,8)}}</td>
-                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->quiz_ans_four ,8)}}</td>
+                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->a ,8)}}</td>
+                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->b ,8)}}</td>
+                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->c ,8)}}</td>
+                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->d ,8)}}</td>
+                        <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm"> {{Str::limit($quiz->ans ,8)}}</td>
                         <td class="px-2 py-2 whitespace-no-wrap border-b text-white border-gray-500 text-sm">
                             <div class="flex flex-row">
                                <button type="button" class="focus:outline-none hover:text-green-600" wire:click="edit({{$quiz->id}})" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button>

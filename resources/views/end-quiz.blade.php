@@ -13,12 +13,16 @@
     <div class="grid grid-cols-1 gap-4 my-10">
 
         <div class="w-full">
-            <img class="w-56 h-40 mx-auto" src="https://media3.giphy.com/media/5tkQ2D8oxYBVKwWNMV/giphy.gif" alt="">
-            <img class="w-56 h-40 mx-auto" src="https://media.giphy.com/media/Pn1h5Un3LZD9uq3u07/giphy.gifdia/5tkQ2D8oxYBVKwWNMV/giphy.gif" alt="">
+            @if (Session::get('correct') <= 10)
+                <img class="w-56 h-40 mx-auto" src="https://media.giphy.com/media/Pn1h5Un3LZD9uq3u07/giphy.gifdia/5tkQ2D8oxYBVKwWNMV/giphy.gif" alt="">
+            @else
+                <img class="w-56 h-40 mx-auto" src="https://media3.giphy.com/media/5tkQ2D8oxYBVKwWNMV/giphy.gif" alt="">
+            @endif
         </div>
     </div>
-
-    <button type="submit" class="float-right p-2 bg-indigo-600 text-white rounded">Next</button>
-
+    <form action="{{url('/session-flash')}}" method="POST">
+        @csrf
+        <button type="submit" class="w-full p-2 bg-indigo-600 text-white rounded">Start Agaign</button>
+    </form>
 </div>
 @endsection

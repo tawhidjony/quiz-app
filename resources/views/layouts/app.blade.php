@@ -28,7 +28,7 @@
 
     </head>
     <body class="">
-        <div class="min-h-screen bg-gray-100 bg-image" >
+        <div class="min-h-screen bg-gray-900 " >
             @include('layouts.navigation')
             <main>
                 {{ $slot }}

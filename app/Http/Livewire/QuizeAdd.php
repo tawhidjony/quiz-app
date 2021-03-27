@@ -53,10 +53,11 @@ class QuizeAdd extends Component
         $edit_quiz = Quize::findOrFail($id);
         $this->hiddenId     = $id;
         $this->quiz_name    = $edit_quiz->quiz_name;
-        $this->quiz_one     = $edit_quiz->quiz_ans_one;
-        $this->quiz_two     = $edit_quiz->quiz_ans_two;
-        $this->quiz_three   = $edit_quiz->quiz_ans_three;
-        $this->quiz_four    = $edit_quiz->quiz_ans_four;
+        $this->quiz_one     = $edit_quiz->a;
+        $this->quiz_two     = $edit_quiz->b;
+        $this->quiz_three   = $edit_quiz->c;
+        $this->quiz_four    = $edit_quiz->d;
+        $this->ans          = $edit_quiz->ans;
         $this->updateMode = true;
 
     }
@@ -68,10 +69,11 @@ class QuizeAdd extends Component
 
             $update_quiz->update([
                 'quiz_name' => $this->quiz_name,
-                'quiz_ans_one' => $this->quiz_one,
-                'quiz_ans_two' => $this->quiz_two,
-                'quiz_ans_three' => $this->quiz_three,
-                'quiz_ans_four' => $this->quiz_four,
+                'a' => $this->quiz_one,
+                'b' => $this->quiz_two,
+                'c' => $this->quiz_three,
+                'd' => $this->quiz_four,
+                'ans' => $this->ans,
             ]);
             session()->flash('message', 'Quiz has been updated');
             $this->resetInput();

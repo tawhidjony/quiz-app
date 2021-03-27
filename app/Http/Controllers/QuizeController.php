@@ -143,4 +143,10 @@ class QuizeController extends Controller
 
 
     }
+
+    public function removeSession(Request $request){
+        $request->session()->forget('wrong');
+        $request->session()->forget('correct');
+        return redirect()->route('/');
+    }
 }

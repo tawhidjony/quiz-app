@@ -17,15 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
-Route::post('/ans-store', function (Request $request) {
-  dd($request->all());
-})->name('ans.store');
 
 Route::resource('quiz', QuizeController::class);
 Route::any('start-quiz', [QuizeController::class, 'startQuiz']);
 Route::any('submit-ans', [QuizeController::class, 'submitAns']);
+Route::any('session-flash', [QuizeController::class, 'removeSession']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

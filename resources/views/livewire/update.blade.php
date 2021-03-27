@@ -34,6 +34,18 @@
             @error('quiz_four') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
+            <label for="">Quiz Answer</label>
+            <div class="relative inline-flex w-full">
+                <select wire:model="ans" class="border w-full rounded backdrop border-green-300  bg-white bg-opacity-10 text-black focus:outline-none">
+                  <option>Select Answer</option>
+                  <option value="a">A</option>
+                  <option value="b">B</option>
+                  <option value="c">C</option>
+                  <option value="d">D</option>
+                </select>
+              </div>
+        </div>
+        <div class="col-span-12">
            <button type="submit" wire:click="update()" class="text-center text-white w-full rounded backdrop border border-green-300 h-10 bg-white bg-opacity-10 focus:outline-none px-2 shadow p-2 ">Update Quiz</button>
         </div>
     </div>
