@@ -9,7 +9,7 @@
 
 <p align="center" style="font-size:bold">Project Setup</p>
 
-###Step 1: Clone the project from this git repo;
+### Step 1: Clone the project from this git repo;
 ``` 
 SSh: git@github.com:tawhidjony/quiz-app.git 
 Or
@@ -17,15 +17,15 @@ HTTPS: https://github.com/tawhidjony/quiz-app.git
 ``` 
 ### Step 2: Setup composer if you have skip this setp [Download Composer](https://getcomposer.org/Composer-Setup.exe)
 
-###Step 3: Create Database any name 
-###Step 4: open your cmd the project root folder
+### Step 3: Create Database any name 
+### Step 4: open your cmd the project root folder
 
 ```
 1: composer install
 2: cp .env.example .env
 3: php artisan key:generate
 ```
-###Step 5:Choose the .env file and change DB name before you create
+### Step 5:Choose the .env file and change DB name before you create
 
 ```
 1: php artisan migrate
