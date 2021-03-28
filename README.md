@@ -9,7 +9,7 @@
 
 <p align="center" style="font-size:bold">Project Setup</p>
 
-### Step 1: Clone the project from this git repo;
+### Step 1: Clone this project;
 ``` 
 SSh: git@github.com:tawhidjony/quiz-app.git 
 Or
