@@ -13,22 +13,22 @@
         </div>
 
         <div class="col-span-12">
-            <label for="">Quiz One</label>
+            <label for="">Quiz A</label>
             <input type="text" wire:model="quiz_one" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz one">
             @error('quiz_one') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Two</label>
+            <label for="">Quiz B</label>
             <input type="text" wire:model="quiz_two" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz two">
             @error('quiz_two') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Three</label>
+            <label for="">Quiz C</label>
             <input type="text" wire:model="quiz_three" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz three">
             @error('quiz_three') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Four</label>
+            <label for="">Quiz D</label>
             <input type="text" wire:model="quiz_four" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz four">
             @error('quiz_four') <small class="text-red-500">{{$message}}</small> @enderror
         </div>

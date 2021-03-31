@@ -32,7 +32,10 @@
                         </td>
                     </tr>
                     @empty
-                    <p>no data available</p>
+                   
+                    <tr>
+                    <td colspan="8" class="text-center"> <p class="text-cener p-4 ">No data available</p></td>
+                    </tr>
                     @endforelse
                 </tbody>
             </table>
